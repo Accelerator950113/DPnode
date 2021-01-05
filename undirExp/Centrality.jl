@@ -136,7 +136,7 @@ function ClosenessCentrality(G)
         C[s] = sum(d)
     end
 
-    foreach(i -> C[i] = 1.0 / C[i], 1 : G.n)
+    # foreach(i -> C[i] = 1.0 / C[i], 1 : G.n)
 
     return C
 end
@@ -156,7 +156,8 @@ function ForestDistanceClosenessCentrality(G)
     # calculate FDC
     trace = tr(W)
     C = zeros(G.n)
-    foreach(i -> C[i] = 1.0 / (G.n * W[i, i] + trace - 2), 1 : G.n)
+    # foreach(i -> C[i] = 1.0 / (G.n * W[i, i] + trace - 2), 1 : G.n)
+    foreach(i -> C[i] = W[i, i], 1 : G.n)
 
     return C
 end
