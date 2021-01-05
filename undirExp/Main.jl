@@ -1,0 +1,17 @@
+include("Graph.jl")
+include("Centrality.jl")
+
+fileName = string("Dataset/", ARGS[1], ".txt")
+G0 = readGraph(fileName, "unweighted")
+G = getLLC(G0)
+lg = open("log.txt", "a")
+println(lg, ARGS[1], " ", G0.n, " ", G0.m, " ", G.n, " ", G.m)
+
+println(lg, "DC : ", getPc(Degree(G)))
+println(lg, "BC : ", getPc(BetweennessCentrality(G)))
+println(lg, "CC : ", getPc(ClosenessCentrality(G)))
+println(lg, "EC : ", getPc(EigenvectorCentrality(G)))
+println(lg, "PR : ", getPc(PageRank(G)))
+println(lg, "IC : ", getPc(InformationCentrality(G)))
+println(lg, "FDC : ", getPc(ForestDistanceClosenessCentrality(G)))
+println(lg)
