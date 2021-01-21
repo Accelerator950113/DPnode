@@ -9,9 +9,6 @@ The network data is available on : http://networkrepository.com and https://snap
 Start experiments with
 ```
 sh undirExp/doExp.sh
-```
-and  
-```
 sh dirExp/doExp.sh
 ```
 ## Code for Generating Pictures
