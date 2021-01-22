@@ -13,7 +13,7 @@ sh dirExp/doExp.sh
 ```
 ## Code for Generating Pictures
 *PictureCode* --> Metapost code for generating Figure 1 and 2 in the paper  
-Generating pictures by
+Generate pictures by
 ```
 mpost PictureCode/Figure1.mp
 mpost PictureCode/Figure2.mp
