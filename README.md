@@ -11,6 +11,8 @@ Start experiments with
 sh undirExp/doExp.sh
 sh dirExp/doExp.sh
 ```
+## Excel Table of Table V
+See **Table-V.xlsx**   
 ## Code for Generating Pictures
 *PictureCode* --> Metapost code for generating Figure 1 and 2 in the paper  
 Generate pictures by
