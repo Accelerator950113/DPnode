@@ -8,8 +8,13 @@ Download julia on : https://julialang.org
 The network data is available on : http://networkrepository.com and https://snap.stanford.edu  
 Start experiments with
 ```shell
-sh undirExp/doExp.sh
-sh dirExp/doExp.sh
+cd undirExp
+sh doExp.sh
+```
+and
+```shell
+cd dirExp
+sh doExp.sh
 ```
 ## Excel Table of Table V
 See **Table-V.xlsx**   
@@ -17,6 +22,7 @@ See **Table-V.xlsx**
 *PictureCode* --> Metapost code for generating Figure 1 and 2 in the paper  
 Generate pictures by
 ```shell
-mpost PictureCode/Figure1.mp
-mpost PictureCode/Figure2.mp
+cd PictureCode
+mpost Figure1.mp
+mpost Figure2.mp
 ```
